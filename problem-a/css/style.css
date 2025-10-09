@@ -1,0 +1,49 @@
+svg > rect:first-of-type { 
+  fill: #fff; 
+}
+
+svg > circle[cx="225"][cy="130"][r="100"],
+svg > circle[cx="375"][cy="130"][r="100"] {
+  fill: #5f5f5f}
+
+svg > path:nth-of-type(1),
+svg > path:nth-of-type(2) {
+  stroke: #5f5f5f;
+  stroke-width: 8px;        
+}
+
+svg > circle.small {
+  fill: white; 
+}
+
+svg > g.contained:first-of-type circle.small {
+  fill:#573d29;
+}
+
+svg > g.contained + g.contained > circle,
+svg > g.contained + g.contained > rect {
+  fill: #c0c0c0;
+  stroke: none;
+}
+
+svg #interactive {
+  fill: #c0c0c0;
+  stroke: #bd250d;
+  stroke-width: 4px;
+}
+
+svg #interactive:hover {
+  fill: #bd250d;
+}
+
+svg > rect[x="100"][y="160"][width="150"][height="150"],
+svg > rect[x="350"][y="160"][width="150"][height="150"],
+svg > rect[x="235"][y="340"][width="130"][height="150"] {
+  opacity: 0;
+}
+svg #rect { opacity: 1; }
+
+svg > path:last-of-type {
+  fill: #bd250d;
+  stroke: none;
+}
